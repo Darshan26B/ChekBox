@@ -4,15 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
     EditText e1,e2;
     Button b;
     TextView t1;
-    double Ans;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         e1= findViewById(R.id.e1);
         e2=findViewById(R.id.e2);
         b=findViewById(R.id.b);
-        t1=findViewById(R.id.t1);
+        b=findViewById(R.id.b);
+
+        e1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
     }
 }
